@@ -18,21 +18,32 @@
 3. Add a label and checkbox for the read property
 4. Add a submit button to add a new book
 
+<!-- create a form, apparently? -->
+
 - In your app.js
 
 1. Create a class `Book` that has the following properties:
    - Title (string)
    - Author (string)
    - Read (boolean)
+
+<!-- always add a method named constructor(). -->
+
 2. Create a class `Library` that has the following properties and methods:
    - Book count (number)
    - Books (array of books)
    - `markRead` method that will:
      - Take in a parameter `checkbox` and `id`
+
+<!-- the forEach() method executes a provided function once for each array element (checkbox, id) -->
+
      - Loop through the library books
      - If the book id is the same as the param id, change the book read property to true, the `checkbox` checked attribute to true, and the `checked` disabled attribute to true
    - `addBook` method that will:
      - Select the title input value, author input value, and read checkbox value
+
+<!-- const input values -->
+
      - Use the book constructor to create a new book, passing in the input value, author value, and read checkbox value as params
      - Create a new table row
      - Create new table cells `title`, `author` and `read` properties of the newly added book
